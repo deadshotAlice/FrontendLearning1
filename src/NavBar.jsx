@@ -3,7 +3,8 @@ import React from 'react'
 const NavBar = () => {
     return (
         <header>
-            <img src='/logo.svg' alt='Apple Logo'/>
+            <nav>
+            <img src='/public/logo.svg' alt='Apple Logo'/>
                 <ul>
                     {[
                         {label: 'Store'},
@@ -11,12 +12,18 @@ const NavBar = () => {
                         {label: 'Mac'},
                         {label: 'Linux'},
 
-                    ].map(({label})=>{
+                    ].map(({label})=>(
                         <li key={label}>
                             <a href={label}>{label}</a>
-                        </li>})
+                        </li>))
                     }
                 </ul>
+                <div class='button'>
+                    <button><img src='/public/search.svg' alt='search'/></button>
+                    <button><img src='/public/cart.svg' alt='cart'/></button>
+                </div>
+            </nav>
+
         </header>
     )
 }

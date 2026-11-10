@@ -5,3 +5,44 @@ main{
 body{
     background-color: pink;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: purple;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+    list-style: none;
+    color:aliceblue;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px;
+    gap:10px;
+}
+button{
+    border: none;
+    outline: none;
+    margin: 0;
+
+}
+button:hover{
+    transform: translateY(-2px);
+}
