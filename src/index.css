@@ -43,7 +43,6 @@ nav button{
     outline: none;
     background-color: black ;
     margin: 0;
-
 }
 button:hover{
     transform: translateY(-2px);
@@ -54,8 +53,6 @@ button:hover{
     flex-direction: column;
     max-width: 1000px;
     margin: 100px auto;
-
-
 }
 #hero h1{
     text-align: center;
@@ -80,26 +77,18 @@ button:hover{
         /*color:lightgray;*/
         /*font-size:20px;*/
         /*font-weight: bold;*/
-
     border-radius: 24px;
-
     background: linear-gradient(
             135deg,
             rgba(255, 255, 255, 0.26), /* 左上角微微透白 */
             rgba(255, 255, 255, 0.04)  /* 右下角几乎全透 */
     );
-
-
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-
-
     border-top: 1px solid rgba(255, 255, 255, 0.45);
     border-left: 1px solid rgba(255, 255, 255, 0.22);
     border-right: 1px solid rgba(255, 255, 255, 0.03);
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-
-
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 
     color: #ffffff;
