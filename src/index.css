@@ -38,7 +38,7 @@ nav .button{
     margin: 5px;
     gap:10px;
 }
-button{
+nav button{
     border: none;
     outline: none;
     background-color: black ;
@@ -47,4 +47,60 @@ button{
 }
 button:hover{
     transform: translateY(-2px);
+}
+#hero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 100px auto;
+
+
+}
+#hero h1{
+    text-align: center;
+    color: white;
+}
+#hero img{
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+}
+#hero button{
+        width:100px;
+        height:60px;
+        margin:0 auto;
+        /*border-radius: 20px;*/
+        /*background:linear-gradient(to right bottom, rgb(255 255 255 / 0.56), rgb(255 255 255 / 0.52));*/
+        /*backdrop-filter: blur(0.5px);*/
+        /*box-shadow: 10px 10px 20px rgba(0,0,0,0.2);*/
+        /*border-top: 1px solid rgb(255 255 255 / 0.38);*/
+        /*border-left: 1px solid rgb(255 255 255 / 0.34);*/
+        /*color:lightgray;*/
+        /*font-size:20px;*/
+        /*font-weight: bold;*/
+
+    border-radius: 24px;
+
+    background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.26), /* 左上角微微透白 */
+            rgba(255, 255, 255, 0.04)  /* 右下角几乎全透 */
+    );
+
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+
+    border-top: 1px solid rgba(255, 255, 255, 0.45);
+    border-left: 1px solid rgba(255, 255, 255, 0.22);
+    border-right: 1px solid rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+
+    color: #ffffff;
 }
