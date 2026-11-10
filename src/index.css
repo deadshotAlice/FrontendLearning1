@@ -1,9 +1,9 @@
 
 main{
-    background-color: pink;
+    background-color: black;
 }
 body{
-    background-color: pink;
+    background-color: black;
 }
 *{
     margin: 0;
@@ -14,32 +14,34 @@ nav{
     display: flex;
     justify-content: space-between;
     height: 50px;
-    background-color: purple;
+    background-color: black;
 }
 nav ul{
     display: flex;
     flex-direction: row;
-    gap:12px;
+    gap:25px;
     list-style: none;
-    color:aliceblue;
-    justify-content: flex-end;
+    color:white;
+    justify-content:center;
     align-items: center;
-    margin-left: auto;
+
 }
 nav a{
     text-decoration: none;
     color: white;
 }
-.button{
+nav .button{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
     margin: 5px;
     gap:10px;
 }
 button{
     border: none;
     outline: none;
+    background-color: black ;
     margin: 0;
 
 }

@@ -1,5 +1,5 @@
-import React from 'react'
-import NavBar from "./NavBar.jsx";
+// import React from 'react'
+import NavBar from "./components/NavBar.jsx";
 
 const App = () => {
     return (
