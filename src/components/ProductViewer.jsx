@@ -2,11 +2,23 @@
 import useMacbookStore from '../store/index.js';
 import {Canvas} from '@react-three/fiber';
 import {Box, OrbitControls} from '@react-three/drei'
+import {MacbookModel14} from "./models/Macbook.jsx";
+import MacbookModel16 from "./models/Macbook-16.jsx";
+import StudioLights from "./models/StudioLights.jsx";
 const ProductViewer = () => {
     const {color,scale,setColor,setScale} = useMacbookStore();
     return (
         <section id="product-viewer">
             <h2 style={{color:"white",}}>Take a closer look</h2>
+            <Canvas id="canvas" camera={{position:[0,1.5,3],fov:50,near:0.1,far:100}}>
+                <StudioLights />
+                <ambientLight intensity={1} />
+                <MacbookModel14 scale={0.06} position={[0,0,0]} />
+                {/*<MacbookModel16 scale={0.08} position={[-1,-1,0]} />*/}
+
+
+                <OrbitControls enableZoom={false} />
+            </Canvas>
         <div className="info">MacBook Pro {scale} in {color}</div>
         <div className="control">
         <div className="color-control">
@@ -18,12 +30,7 @@ const ProductViewer = () => {
                 <div onClick={()=>setScale(16)} className={scale === 16 ? 'active' : ''}><p>16"</p></div>
             </div>
         </div>
-            <Canvas id="canvas" camera={{position:[0,2,5],fov:50,near:0.1,far:100}}>
-                {/*<Box position={[0,0,0]} scale={scale/5} material-color={color} />*/}
 
-
-            <OrbitControls enableZoom={false} />
-            </Canvas>
         </section>
 
 

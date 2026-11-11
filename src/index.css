@@ -99,6 +99,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap:25px;
 }
 #product-viewer .info{
     color: white;
