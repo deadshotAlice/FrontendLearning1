@@ -93,14 +93,77 @@ button:hover{
 }
 
 #product-viewer{
+    width: 100%;
     display: flex;
     margin:0 auto;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+#product-viewer .info{
+    color: white;
+}
+#product-viewer .control{
+    display: flex;
+    gap:20px;
+    flex-direction: row;
+}
+#product-viewer .color-control{
+    display: flex;
+    flex-direction: row;
+    height:30px;
+    width:80px;
+    border-radius:999px;
+    background-color:#333;
+    gap:5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.color-control div{
+    border-radius: 50%;
+    cursor: pointer;
+    width:25px;
+    height:25px;
+    margin:auto;
+}
+
 .color-control .light{
+    border-radius:50% ;
     background-color: rgba(255, 255, 255, 0.2);
+    /*margin-left: 10px;*/
 }
 .color-control .dark{
+    border-radius:50% ;
     background-color: rgba(255, 255, 255, 0.8);
+    /*margin-right: 10px;*/
 }
+#product-viewer .size-control{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width:80px;
+    border-radius:999px;
+    background-color:#333;
+    gap:5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.size-control >div{
+    border-radius: 50%;
+    background-color: white;
+    width: 25px;
+    height:25px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.size-control div p{
+
+    margin:0;
+    font-size:16px;
+}
+
+
+
+
