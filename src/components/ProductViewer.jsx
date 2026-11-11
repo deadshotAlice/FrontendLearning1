@@ -1,5 +1,7 @@
 
 import useMacbookStore from '../store/index.js';
+import {Canvas} from '@react-three/fiber';
+import {Box} from '@react-three/drei'
 const ProductViewer = () => {
     const {color,scale,setColor,setScale} = useMacbookStore();
     return (
@@ -16,6 +18,9 @@ const ProductViewer = () => {
                 <div onClick={()=>setScale(16)} className={scale === 16 ? 'active' : ''}><p>16"</p></div>
             </div>
         </div>
+            <Canvas id="canvas">
+                <Box position={[-1,1,0]} scale={scale/5} material-color={color} />
+            </Canvas>
         </section>
 
 
