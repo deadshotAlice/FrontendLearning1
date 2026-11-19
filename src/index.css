@@ -136,12 +136,12 @@ button:hover{
 
 .color-control .grey{
     border-radius:50% ;
-    background-color: grey;
+    background-color: #2e2c2e;
     /*margin-left: 10px;*/
 }
 .color-control .silver{
     border-radius:50% ;
-    background-color: silver;
+    background-color: #adb5bd;
     /*margin-right: 10px;*/
 }
 #product-viewer .size-control{

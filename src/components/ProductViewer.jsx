@@ -2,7 +2,7 @@
 import useMacbookStore from '../store/index.js';
 import {Canvas} from '@react-three/fiber';
 import {OrbitControls} from '@react-three/drei'
-import {MacbookModel14} from "./models/Macbook.jsx";
+import MacbookModel14 from "./models/Macbook-14.jsx";
 import MacbookModel16 from "./models/Macbook-16.jsx";
 import StudioLights from "./models/StudioLights.jsx";
 const ProductViewer = () => {
@@ -26,8 +26,8 @@ const ProductViewer = () => {
             <div onClick={()=>setColor('silver')} className={`silver ${color === 'silver' ? 'active' : ''}`}></div>
         </div>
             <div className="size-control">
-                <div onClick={()=>setScale(14)} className={scale === 14 ? 'active' : ''}><p>14"</p></div>
-                <div onClick={()=>setScale(16)} className={scale === 16 ? 'active' : ''}><p>16"</p></div>
+                <div onClick={()=>setScale(14)} className={scale ===14 ? 'active' : ''}><p>14"</p></div>
+                <div onClick={()=>setScale(16)} className={scale ===16 ? 'active' : ''}><p>16"</p></div>
             </div>
         </div>
 
