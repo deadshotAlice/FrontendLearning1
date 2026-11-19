@@ -1,6 +1,7 @@
 
 import useMacbookStore from '../store/index.js';
 import {Canvas} from '@react-three/fiber';
+import {Box} from '@react-three/drei';
 import {OrbitControls} from '@react-three/drei'
 import MacbookModel14 from "./models/Macbook-14.jsx";
 import MacbookModel16 from "./models/Macbook-16.jsx";
@@ -30,6 +31,10 @@ const ProductViewer = () => {
                 <div onClick={()=>setScale(16)} className={scale ===16 ? 'active' : ''}><p>16"</p></div>
             </div>
         </div>
+            <Canvas id='canvas' camera={{position:[0,2,5],fov:50,near:0.1,far:100}}>
+                <Box position={[0, 0, 0]} scale={scale===16?0.8:0.6} material-color={color}/>
+                <OrbitControls enableZoom={false}/>
+            </Canvas>
 
         </section>
 

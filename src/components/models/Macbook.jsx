@@ -12,7 +12,7 @@ import { useGLTF } from '@react-three/drei'
 import {useTexture} from '@react-three/drei'
 
 
-export function MacbookModel14(props) {
+export default MacbookModel14(props)   {
   const { nodes, materials } = useGLTF('/models/macbook-transformed.glb');
   const texture=useTexture('/screen.png')
   return (
