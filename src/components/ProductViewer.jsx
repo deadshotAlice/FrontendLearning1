@@ -20,8 +20,8 @@ const ProductViewer = () => {
                 <ambientLight intensity={1} />
                 {/*<MacbookModel14 scale={0.06} position={[0,0,0]} />*/}
                 {/*<MacbookModel16 scale={0.08} position={[-1,-1,0]} />*/}
-                <ModelSwitcher scale={isMobile ? scale-0.03 : scale} isMobile={isMobile} />
-
+                {/*<ModelSwitcher scale={isMobile ? scale-0.03 : scale} isMobile={isMobile} />*/}
+                {<ModelSwitcher scale={scale} isMobile={isMobile} />}
 
                 <PresentationControls enableZoom={false} target={[0,0.6,0]} />
             </Canvas>
