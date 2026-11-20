@@ -8,24 +8,25 @@ import {useGSAP} from "@gsap/react";
 
 const ANIMATION_DURATION = 1;
 const OFFSET_DISTANCE = 5;
-const fadeMeshes=(group,opacity)=>{
+
+const fadeMeshes=(group,opacity,duration=ANIMATION_DURATION)=>{
     if(!group){
         return;
     }
     group.traverse((child)=>{
         if(child.isMesh){
             child.material.transparent = true;
-        gsap.to(child.material,{opacity,duration:ANIMATION_DURATION});
+            gsap.to(child.material,{opacity,duration});
         }
-    })
-}
-const moveGroup=(group,x)=>{
+    });
+};
+const moveGroup=(group,x,duration=ANIMATION_DURATION)=>{
     if(!group){return;}
     else{
-        gsap.to(group.position,{x,duration:ANIMATION_DURATION});
+        gsap.to(group.position,{x,duration});
 
     }
-}
+};
 
 
 const ModelSwitcher = ({scale,isMobile}) => {
@@ -33,6 +34,9 @@ const ModelSwitcher = ({scale,isMobile}) => {
     const largeMacbookRef=useRef(null);
     // const showMacbookRef=scale===0.08 || scale===0.05;
     const showlargeMacbook= scale===16;
+
+    const prevScale=useRef(scale);
+
 
     const controlsConfig={
         snap:true,
@@ -48,18 +52,23 @@ const ModelSwitcher = ({scale,isMobile}) => {
         },
     }
      useGSAP(()=>{
+         const isInitial=prevScale.current===scale;
+         const duration=isInitial?0:ANIMATION_DURATION;
+
+
         if(showlargeMacbook){
-            moveGroup(smallMacbookRef.current,-OFFSET_DISTANCE);
-            moveGroup(largeMacbookRef.current,0);
-            fadeMeshes(smallMacbookRef.current,0);
-            fadeMeshes(largeMacbookRef.current,1);
+            moveGroup(smallMacbookRef.current,-OFFSET_DISTANCE,duration);
+            moveGroup(largeMacbookRef.current,0,duration);
+            fadeMeshes(smallMacbookRef.current,0,duration);
+            fadeMeshes(largeMacbookRef.current,1,duration);
         }
         else{
-            moveGroup(smallMacbookRef.current,0);
-            moveGroup(largeMacbookRef.current,OFFSET_DISTANCE);
-            fadeMeshes(smallMacbookRef.current,1);
-            fadeMeshes(largeMacbookRef.current,0);
+            moveGroup(smallMacbookRef.current,0,duration);
+            moveGroup(largeMacbookRef.current,OFFSET_DISTANCE,duration);
+            fadeMeshes(smallMacbookRef.current,1,duration);
+            fadeMeshes(largeMacbookRef.current,0,duration);
         }
+        prevScale.current=scale;
 
     },[scale])
 
