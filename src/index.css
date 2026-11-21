@@ -184,6 +184,34 @@ button:hover{
 /*    margin-top:80px;*/
 /*}*/
 
+#showcase .media video{
+    width:100%;
+    display:block;
+    height:auto;
+}
+#showcase .content{
+    margin-top:1.75rem;
+    padding-top:1.25rem;
+    padding-left:1rem;
+}
+#showcase .text1 p{
+    width:100%;
+    color:white;
+    font-size:25px;
+    opacity: 0.8;
+
+}
+#showcase .text2 p{
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+
+}
+#showcase .text3 span{
+    color:white;
+    opacity:1;
+
+}
 
 
 
