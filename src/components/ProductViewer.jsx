@@ -15,7 +15,7 @@ const ProductViewer = () => {
     return (
         <section id="product-viewer">
             <h2 style={{color:"white",}}>Take a closer look</h2>
-            <Canvas id="canvas" style={{width:'100%',height:'600px',flexShrink:'1'}} camera={{position:[0,1.5,4.5],fov:50,near:0.1,far:100}}>
+            <Canvas id="canvas" style={{width:'100%',height:'560px',flexShrink:'1'}} camera={{position:[0,1.5,4.5],fov:50,near:0.1,far:100}}>
                 <StudioLights />
                 <ambientLight intensity={1} />
                 {/*<MacbookModel14 scale={0.06} position={[0,0,0]} />*/}
@@ -36,10 +36,10 @@ const ProductViewer = () => {
                 <div onClick={()=>setScale(16)} className={scale ===16 ? 'active' : ''}><p>16"</p></div>
             </div>
         </div>
-            <Canvas id='canvas' camera={{position:[0,2,5],fov:50,near:0.1,far:100}}>
-                <Box position={[0, 0, 0]} scale={scale===16?0.8:0.6} material-color={color}/>
-                <OrbitControls enableZoom={false}/>
-            </Canvas>
+            {/*<Canvas id='canvas' camera={{position:[0,2,5],fov:50,near:0.1,far:100}}>*/}
+            {/*    <Box position={[0, 0, 0]} scale={scale===16?0.8:0.6} material-color={color}/>*/}
+            {/*    <OrbitControls enableZoom={false}/>*/}
+            {/*</Canvas>*/}
 
         </section>
 

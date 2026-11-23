@@ -92,8 +92,9 @@ button:hover{
     color: #ffffff;
 }
 
+
 #product-viewer{
-    width: 100dvw;
+    width:100dvw;
     height:100dvh;
     display: flex;
     margin:0 auto;
@@ -282,7 +283,9 @@ button:hover{
 #showcase .content2 h3{
     color:white;
 }
-
+#performance .content p{
+    color:white;
+}
 /*#showcase .text1 p{*/
 /*    width:100%;*/
 /*    color:white;*/
@@ -300,9 +303,7 @@ button:hover{
 /*    color:white;*/
 /*    opacity:1;*/
 /*}*/
-/*#showcase text-primary{*/
-/*    padding-bottom: 1rem;*/
-/*}*/
+
 
 
 
