@@ -19,7 +19,7 @@ const Showcase = () => {
                 transform:'scale(1.05)',})
                 .to('.content',{opacity:1,y:0,ease:'power1.in'});
         }
-    },[isTablet]);
+    },{ dependencies: [isTablet], revertOnUpdate: true });
     return (
         <section id="showcase">
             <div className='media'>
@@ -32,7 +32,7 @@ const Showcase = () => {
             <div className="content1">
                 <div className="wrapper">
                     <div className="text1">
-                        <h1>Rocket Chip</h1>
+                        <marker>Rocket Chip</marker>
                     </div>
                     <div className="text2">
                         <p>
@@ -68,7 +68,9 @@ const Showcase = () => {
                     <p>CPU performance than M2</p>
                 </div>
             </div>
+
             </div>
+
 
         </section>
 

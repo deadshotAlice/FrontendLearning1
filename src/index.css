@@ -198,20 +198,43 @@ button:hover{
     height:auto;
     object-fit:cover;
     object-position:center;
+    clip-path: inset(0 0 4px 0);
+
 }
+#showcase .media::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 2px;
+    background: #000;
+    z-index: 1;
+    pointer-events: none;
+}
+
 #showcase .mask{
     position:absolute;
     top:0;
-    height:100%;
+    inset:0 0 -1px;
+    height:auto;
 }
 #showcase .mask img{
+    width:100%;
     height:100%;
-    transform: matrix(60, 0, 0, 60, 0, 0);
+    transform: matrix(80, 0, 0, 80, 0, 0);
+    object-fit:cover;
+    display: block;
 }
 @media (max-width: 1024px){
     #showcase .mask img{
         transform: matrix(1, 0, 0, 1, 0, 0);
     }
+}
+
+#showcase .content{
+    display:flex;
+    gap:2rem;
+    margin-top:1rem;
+    /*flex-direction: row;*/
 }
 #showcase .content1 p{
     margin-top:0.75rem;
@@ -221,9 +244,10 @@ button:hover{
 
     font-size:24px;
 }
-#showcase .content1 .text1 h1{
+#showcase .content1 .text1 marker{
     color:white;
     padding-left:1rem;
+    font-size:48px;
 
 }
 #showcase .content1 .text2 p{
@@ -252,7 +276,7 @@ button:hover{
     gap:2rem;
 }
 #showcase .content2 p{
-    font-size:22px;
+    font-size:24px;
     color:grey;
 }
 #showcase .content2 h3{

@@ -16,6 +16,16 @@ OrbitControls抢事件喵。<br>
 设计一个新的duration,不要写死喵。<br>
 然后整一个initial和判断，以及一个prev用useref抓取数据。保证永远不等喵。<br>
 <mark>输出的可是布尔值喵！</mark>
-
-  
-
+7.用户酱找茬开F12导致动画出现两次以及一个超长pin-spacer问题喵：<br>
+``` JS
+useGSAP(()=>{
+    
+},[istablet])
+```
+会被神奇地控制两次。<br>
+```JS
+{ dependencies: [isTablet], revertOnUpdate: true }
+```
+这样才对喵。<br>
+8。视频底边透亮缝隙问题:<br>
+clip-path裁一下？<br>
