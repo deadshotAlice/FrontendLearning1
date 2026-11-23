@@ -185,13 +185,33 @@ button:hover{
 /*}*/
 
 
+#showcase{
+    position:relative;
+}
+#showcase .media{
+    position:relative;
+    overflow:hidden;
+}
 #showcase .media video{
     width:100%;
     display:block;
     height:auto;
+    object-fit:cover;
+    object-position:center;
 }
-#showcase .content1{
-
+#showcase .mask{
+    position:absolute;
+    top:0;
+    height:100%;
+}
+#showcase .mask img{
+    height:100%;
+    transform: matrix(60, 0, 0, 60, 0, 0);
+}
+@media (max-width: 1024px){
+    #showcase .mask img{
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
 }
 #showcase .content1 p{
     margin-top:0.75rem;
