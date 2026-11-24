@@ -1,4 +1,5 @@
 
+
 main{
     background-color: black;
 }
@@ -281,6 +282,24 @@ button:hover{
     color:grey;
 }
 #showcase .content2 h3{
+    color:white;
+}
+
+#performance{
+    position:relative;
+    overflow:hidden;
+}
+#performance .wrapper{
+    position:relative;
+    height:100vh;
+}
+#performance .wrapper img{
+    position:absolute;
+    width:20%;
+    will-change: transform;
+}
+
+#performance .content h2{
     color:white;
 }
 #performance .content p{

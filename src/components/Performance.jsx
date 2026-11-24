@@ -1,4 +1,5 @@
 
+import "tailwindcss";
 import {gsap} from 'gsap';
 import {useGSAP} from "@gsap/react";
 import {useMediaQuery} from "react-responsive";
@@ -36,8 +37,8 @@ const Performance = () => {
 
             scrollTrigger: {
                 trigger: sectionEl,
-                start: 'top bottom',
-                end: 'top center',
+                start: 'top 60%',
+                end: 'bottom 60%',
                 scrub: 1,
                 invalidateOnRefresh: true,
             },

@@ -27,5 +27,7 @@ useGSAP(()=>{
 { dependencies: [isTablet], revertOnUpdate: true }
 ```
 这样才对喵。<br>
-8。视频底边透亮缝隙问题:<br>
+8.视频底边透亮缝隙问题:<br>
 clip-path裁一下？<br>
+9.Performance字体图片动画不显示问题：<br>
+
