@@ -288,6 +288,7 @@ button:hover{
 #performance{
     position:relative;
     overflow:hidden;
+
 }
 #performance .wrapper{
     position:relative;
@@ -303,6 +304,47 @@ button:hover{
     color:white;
 }
 #performance .content p{
+    color:white;
+}
+#highlights{
+    position:relative;
+    overflow:hidden;
+
+}
+#highlights .masonry{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:1.5rem;
+}
+#highlights .left-column{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    gap:1.5rem;
+    margin-left:2rem;
+    opacity:0;
+    transform: translateY(50px);
+}
+#highlights .right-column{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    gap:1.5rem;
+    margin-right:2rem;
+    opacity:0;
+    transform: translateY(50px);
+}
+#highlights p{
+    color:white;
+}
+#highlights h2{
+    color:white;
+}
+#highlights h3{
+    color:white;
+}
+#highlights span{
     color:white;
 }
 /*#showcase .text1 p{*/

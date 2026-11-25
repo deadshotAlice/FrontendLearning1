@@ -31,3 +31,6 @@ useGSAP(()=>{
 clip-path裁一下？<br>
 9.Performance字体图片动画不显示问题：<br>
 
+10.gsap.to不显示问题：<br>
+注意css设置初始样式。<br>
+

@@ -23,8 +23,8 @@ const Performance = () => {
                 ease: "power1.out",
                 scrollTrigger: {
                     trigger: '.content p',
-                    start: 'top top',
-                    end: 'bottom top',
+                    start: 'top 80%',
+                    end: 'bottom 30%',
                     scrub: true,
                     invalidateOnRefresh: true,
                 },
