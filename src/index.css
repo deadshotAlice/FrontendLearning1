@@ -1,4 +1,4 @@
-
+@import "tailwindcss";
 
 main{
     background-color: black;
@@ -346,6 +346,11 @@ button:hover{
 }
 #highlights span{
     color:white;
+}
+#features{
+    position:relative;
+    overflow:hidden;
+
 }
 /*#showcase .text1 p{*/
 /*    width:100%;*/
