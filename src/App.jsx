@@ -21,8 +21,8 @@ const App = () => {
             <Showcase />
             <Performance />
             <Highlights />
-            {/*<Features />*/}
-            {/*<Footer />*/}
+            <Features />
+            <Footer />
         </main>
     )
 }
