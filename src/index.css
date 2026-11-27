@@ -234,22 +234,24 @@ button:hover{
 
 #showcase .content{
     display:flex;
-    gap:2rem;
+    gap:4rem;
     margin-top:1rem;
     /*flex-direction: row;*/
 }
 #showcase .content1 p{
     margin-top:0.75rem;
     padding-top:1.25rem;
-    padding-left:1rem;
-    max-width: 65ch;
-
+    padding-left:3rem;
+    max-width: 80ch;
+    text-wrap:pretty;
+    overflow-wrap: break-word;
     font-size:24px;
 }
 #showcase .content1 .text1 marker{
     color:white;
-    padding-left:1rem;
-    font-size:48px;
+    padding-left:3rem;
+    font-size:3rem;
+    font-weight:bold;
 
 }
 #showcase .content1 .text2 p{
@@ -265,23 +267,23 @@ button:hover{
 .text3{
     margin-top:1.75rem;
     padding-top:1.25rem;
-    padding-left:1rem;
+    padding-left:3rem;
     font-size:24px;
     color:blue;
 }
 #showcase .content2{
     margin-top:3.5rem;
     max-width: 300px;
-    margin-left:1rem;
+    margin-left:3rem;
     display:flex;
     flex-direction:column;
     gap:2rem;
 }
 #showcase .content2 p{
-    font-size:24px;
+    font-size:30px;
     color:grey;
 }
-#showcase .content2 h3{
+#showcase .content2 h2{
     color:white;
 }
 
@@ -290,7 +292,7 @@ button:hover{
     overflow:hidden;
 }
 #performance .content{
-    margin-left:1rem;
+    margin-left:3rem;
     margin-top:40px;
 }
 #performance .wrapper{
@@ -314,10 +316,10 @@ button:hover{
     overflow:hidden;
 }
 #highlights h2{
-    margin-left:1rem;
+    margin-left:3rem;
 }
 #highlights h3{
-    margin-left:1rem;
+    margin-left:3rem;
 }
 #highlights .masonry{
     display:flex;
@@ -330,7 +332,7 @@ button:hover{
     flex:1;
     flex-direction: column;
     gap:1.5rem;
-    margin-left:2rem;
+    margin-left:3rem;
     opacity:0;
     transform: translateY(50px);
 }
@@ -339,7 +341,7 @@ button:hover{
     flex:1;
     flex-direction: column;
     gap:1.5rem;
-    margin-right:2rem;
+    margin-right:3rem;
     opacity:0;
     transform: translateY(50px);
 }

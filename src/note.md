@@ -36,7 +36,7 @@ clip-path裁一下？<br>
 注意css设置初始样式。<br>
 
 11.features不好写，理清逻辑喵:<br>
-先用ModelScroll
+先用ModelScroll,
 
 12.为什么features有两个return?<br>
 因为你同时定义了两个组件喵，ModelScroll和Features,所以两个return。<br>

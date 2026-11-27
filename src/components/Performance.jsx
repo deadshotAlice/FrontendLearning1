@@ -16,7 +16,11 @@ const Performance = () => {
         }
 
         gsap.fromTo(".content p",
-            {opacity: 0, y: 10},
+            {
+                opacity: 0,
+                y: 10,
+                transitionOrigin:"center center",
+            },
             {
                 opacity: 1,
                 y: 0,

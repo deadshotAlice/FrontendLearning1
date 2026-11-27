@@ -38,7 +38,7 @@ const Showcase = () => {
                         <p>
                             Introducing {" "}
                             <span>
-                                    M4, the next generation of Apple silicon<br />
+                                    M4, the next generation of Apple silicon
                                 </span>
                             . M4 powers
                         </p>
@@ -59,12 +59,12 @@ const Showcase = () => {
             <div className="content2">
                 <div>
                     <p>Up to</p>
-                    <h3>4x faster</h3>
+                    <h2>4x faster</h2>
                     <p>pro rendering performance than M2</p>
                 </div>
                 <div>
                     <p>Up to</p>
-                    <h3>1.5x faster</h3>
+                    <h2>1.5x faster</h2>
                     <p>CPU performance than M2</p>
                 </div>
             </div>
