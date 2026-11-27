@@ -288,7 +288,10 @@ button:hover{
 #performance{
     position:relative;
     overflow:hidden;
-
+}
+#performance .content{
+    margin-left:1rem;
+    margin-top:40px;
 }
 #performance .wrapper{
     position:relative;
@@ -309,7 +312,12 @@ button:hover{
 #highlights{
     position:relative;
     overflow:hidden;
-
+}
+#highlights h2{
+    margin-left:1rem;
+}
+#highlights h3{
+    margin-left:1rem;
 }
 #highlights .masonry{
     display:flex;
@@ -350,8 +358,12 @@ button:hover{
 #features{
     position:relative;
     overflow:hidden;
-
 }
+#footer{
+    position:relative;
+    overflow:hidden;
+}
+
 /*#showcase .text1 p{*/
 /*    width:100%;*/
 /*    color:white;*/

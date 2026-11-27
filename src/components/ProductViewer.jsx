@@ -14,7 +14,7 @@ const ProductViewer = () => {
     const isMobile=useMediaQuery({query:'(max-width: 1024px)'});
     return (
         <section id="product-viewer">
-            <h2 style={{color:"white",}}>Take a closer look</h2>
+            <h2 style={{color:"white",fontSize:'2.0rem'}}>Take a closer look</h2>
             <Canvas id="canvas" style={{width:'100%',height:'560px',flexShrink:'1'}} camera={{position:[0,1.5,4.5],fov:50,near:0.1,far:100}}>
                 <StudioLights />
                 <ambientLight intensity={1} />
@@ -22,7 +22,6 @@ const ProductViewer = () => {
                 {/*<MacbookModel16 scale={0.08} position={[-1,-1,0]} />*/}
                 {/*<ModelSwitcher scale={isMobile ? scale-0.03 : scale} isMobile={isMobile} />*/}
                 {<ModelSwitcher scale={scale} isMobile={isMobile} />}
-
                 <PresentationControls enableZoom={false} target={[0,0.6,0]} />
             </Canvas>
         <div className="info" style={{fontSize:'1.5rem'}}>MacBook Pro {scale} in {color}</div>
