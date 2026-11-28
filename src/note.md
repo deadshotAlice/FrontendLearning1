@@ -8,8 +8,7 @@
 分清一下显示scale和实用scale,
 有条件喵，不要按原作者那么写。建议统一。<br>
 4.useMediaQuery:<br>
-适配屏幕喵。
-体现下React的优越性，如果直接原生windows.innerwidth不能重新渲染会卡住。<br>
+适配屏幕喵。体现下React的优越性，如果直接原生windows.innerwidth不能重新渲染会卡住。<br>
 5.回弹不生效问题：<br>
 OrbitControls抢事件喵。<br>
 6.Macbook初始16寸飞出问题:<br>
@@ -28,7 +27,8 @@ useGSAP(()=>{
 ```
 这样才对喵。<br>
 8.视频底边透亮缝隙问题:<br>
-clip-path裁一下？<br>
+我的做法:clip-path裁一下？<br>
+有经验的佬佬可以fork我的“解决视频重复实现并修复排版喵”版面瞅一瞅，当时还没那么石山。<br>
 9.Performance字体图片动画不显示问题：<br>
 我的opacity写错了……要是scroll的话，不能太靠下。<br>
 
@@ -43,5 +43,8 @@ clip-path裁一下？<br>
 但是要注意，你的ModelScroll是Features的子组件,要放到那个Canvas里面，没必要再去export了。
 
 #### 完成主框架后奇奇怪怪的细节问题喵：<br>
+1.你个啥子居然把laptop放大了80倍，同时laptop毫无必要。<br>
+抄教程代码前要动脑子想想。<br>
+
 
 

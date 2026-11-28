@@ -38,15 +38,16 @@ const Performance = () => {
 
         const el = gsap.timeline({
             defaults: { duration: 2, ease: "power1.inOut", overwrite: "auto" },
-
             scrollTrigger: {
                 trigger: sectionEl,
-                start: 'top 60%',
-                end: 'bottom 60%',
+                start: '20% 60%',
+                end: '60% 60%',
                 scrub: 1,
                 invalidateOnRefresh: true,
             },
         });
+        el.from(".wrapper img",{x:750,y:500})
+
 
         performanceImgPositions.forEach((item) => {
             const selector = `.${item.id}`;
@@ -70,7 +71,7 @@ const Performance = () => {
 
     return (
         <section id="performance" ref={sectionRef} className="text-white">
-            <h2>Next-level graphics performance. Game on.</h2>
+            <div className='Headline'>Next-level graphics performance. Game on.</div>
             <div className="wrapper">
                 {performanceImages.map((item,index) => (
                     <img
