@@ -327,6 +327,13 @@ button:hover{
     justify-content: space-between;
     gap:1.5rem;
 }
+#highlights .masonry .laptop img{
+    width:100%;
+    height:100%;
+    transform: matrix(80, 0, 0, 80, 0, 0);
+    object-fit:cover;
+    display: block;
+}
 #highlights .left-column{
     display:flex;
     flex:1;
@@ -383,6 +390,50 @@ button:hover{
 /*    color:white;*/
 /*    opacity:1;*/
 /*}*/
+/*footer{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    height: 50px;*/
+/*    background-color: black;*/
+/*}*/
+footer{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+footer .info{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    position:relative;
+    align-items: center;
+    margin-left:3rem;
+    margin-right:3rem;
+}
+footer .links{
+    display:flex;
+    flex-direction:row;
+    border-top:1px grey solid;
+    padding:0.5rem;
+    justify-content: space-between;
+    margin-left:3rem;
+    margin-right:3rem;
+}
+footer ul{
+    display:flex;
+    flex-direction:row;
+    gap:25px;
+    list-style: none;
+    color:grey;
+    justify-content:center;
+    align-items: center;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
 
 
 

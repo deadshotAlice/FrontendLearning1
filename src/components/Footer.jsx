@@ -4,16 +4,15 @@ const Footer = () => {
     return (
         <footer>
             <div className="info">
-                <p>More ways to shop: Find an Apple Store or other retailer near you. Or call 000800 040 1966.</p>
+                <p className='text-white'>More ways to shop: Find an Apple Store or other retailer near you. Or call 000800 040 1966.</p>
                 <img src="/logo.svg" alt ="Apple logo"/>
             </div>
-
             <hr />
 
             <div className="links">
                 <p className='text-white'>Copyright © 2024 Apple Inc. All rights reserved.</p>
 
-                <ul className="text-white">
+                <ul>
                     {footerLinks.map(({label, link }) => (
                         <li key={label}>
                             <a href={link}>{label}</a>

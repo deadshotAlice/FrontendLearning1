@@ -19,7 +19,7 @@ const Performance = () => {
             {
                 opacity: 0,
                 y: 10,
-                transitionOrigin:"center center",
+                // transitionOrigin:"center center",
             },
             {
                 opacity: 1,
